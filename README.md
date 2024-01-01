@@ -4,7 +4,7 @@
  * built with React
  * styled using tailwind css
  * deployed on netlify
-   
+    
 ## Features
 * Clean and interactive site.
 * Questions are fetched from API keys and questions can be change by changing api key.
