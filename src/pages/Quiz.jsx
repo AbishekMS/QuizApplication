@@ -103,7 +103,7 @@ const Quiz = ({ questions }) => {
           </>
         ) : (
           <>
-            <Result totalQuestion={questions.length} result={result} />
+            <Result totalQuestions={questions.length} result={result} />
           </>
         )}
       </div>
