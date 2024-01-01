@@ -45,6 +45,9 @@ const Result = ({ totalQuestions, result }) => {
         <p className="mb-2">
           Wrong Answers: <span className="font-semibold text-red-500">{result.wrongAnswers}</span>
         </p>
+        <p className="mb-2">
+          Skipped Questions: <span className="font-semibold text-yellow-500">{(totalQuestions-(result.wrongAnswers+result.correctAnswers))}</span>
+        </p>
       </div>
       <section className="flex py-3 flex-col items-end justify-center md:justify-end">
         {result.score >= 20 ? (
@@ -71,9 +74,10 @@ const Result = ({ totalQuestions, result }) => {
               value={name}
               onChange={(e) => setName(e.target.value)}
             ></input>
+            <div className=' py-1 flex-col flex items-end justify-center md:justify-end'>
             <button className="btn1" onClick={handleSave}>
               save
-            </button>
+            </button></div>
           </>
         ) : (
           <>
